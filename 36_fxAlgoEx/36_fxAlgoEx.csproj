@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">  
+  <PropertyGroup>
+    <ProjectGuid>{0A2B26AD-3AEB-4A37-8710-0A27E80C2D18}</ProjectGuid>    
+    <PackageId>fx.AlgoEx</PackageId>
+    <Version>5.0.1</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>        
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <RootNamespace>StockSharp.AlgoEx</RootNamespace>
+    <AssemblyName>StockSharp.AlgoEx</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EcngVer>1.0.46</EcngVer>
+    <LangVersion>8.0</LangVersion>
+    <StockSharpVer>5.*</StockSharpVer>    
+  </PropertyGroup>
+
+  
+  
+     
+  <ItemGroup>
+    <ProjectReference Include="..\00_fxBase\00_fxBase.csproj" />
+    <ProjectReference Include="..\33_fxMessages\33_fxMessages.csproj" />
+    <ProjectReference Include="..\Algo\Algo.csproj" />
+    <ProjectReference Include="..\Localization\Localization.csproj" />
+    <ProjectReference Include="..\Messages\Messages.csproj" />
+  </ItemGroup>
+</Project>

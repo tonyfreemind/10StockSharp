@@ -307,7 +307,13 @@ namespace StockSharp.Algo
 
 						mdMsg = mdMsg.TypedClone();
 						mdMsg.TransactionId = TransactionIdGenerator.GetNextId();
-						mdMsg.DataType2 = DataType.MarketDepth;
+
+						/* -------------------------------------------------------------------------------------------------------------------------------------------
+						* 
+						*  Tony 02 : If DataType2 was changed to MarketDepth instead of FIlterMarketDepth, the SnapshotRegistry will fail
+						* 
+						* ------------------------------------------------------------------------------------------------------------------------------------------- */
+						// mdMsg.DataType2 = DataType.MarketDepth;
 
 						var orderStatus = new OrderStatusMessage
 						{

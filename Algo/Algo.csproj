@@ -15,6 +15,8 @@
     <PackageReference Include="Microsoft.CSharp" Version="$(CSharpVer)" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\00_fxBase\00_fxBase.csproj" />
+    <ProjectReference Include="..\33_fxMessages\33_fxMessages.csproj" />
     <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj" />
     <ProjectReference Include="..\Community\Community.csproj" />
     <ProjectReference Include="..\Configuration\Configuration.csproj" />

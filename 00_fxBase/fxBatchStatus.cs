@@ -1,23 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Xml.Serialization;
+using System.Text;
 
-using Ecng.Common;
-using Ecng.Serialization;
+namespace fx.Base
+{
+	using System;
+	using System.Runtime.Serialization;
 
-using StockSharp.Localization;
-
-namespace fx.Messages
-{	
 	/// <summary>
 	/// Candle states.
 	/// </summary>
 	[System.Runtime.Serialization.DataContract]
 	[Serializable]
-	public enum BatchStatus : byte
+	public enum fxBatchStatus : byte
 	{
 		/// <summary>
 		/// Single Message
