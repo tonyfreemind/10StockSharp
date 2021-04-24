@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>    
+    <ProjectGuid>{389E6821-58F8-4D16-9F6B-4B6E91242CCD}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>fx.Base</PackageId>
+    <Version>5.0.1</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+  <PropertyGroup>       
+    <RootNamespace>fx.Base</RootNamespace>
+    <AssemblyName>fx.Base</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>    
+    <EcngVer>1.0.28</EcngVer>
+    <LangVersion>8.0</LangVersion>    
+    <StockSharpVer>5.*</StockSharpVer>    
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+</Project>

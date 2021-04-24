@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>{07B45D67-8324-40ED-936F-D6FF5651A2D7}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>fx.Localization</PackageId>
+    <Version>5.0.1</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+  
+  <PropertyGroup>    
+    <RootNamespace>fx.Localization</RootNamespace>
+    <AssemblyName>fx.Localization</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EcngVer>1.0.46</EcngVer>
+    <LangVersion>8.0</LangVersion>
+    <StockSharpVer>5.*</StockSharpVer>
+  </PropertyGroup>  
+  <ItemGroup>
+    <Compile Remove="XmlComments\**" />
+    <EmbeddedResource Remove="XmlComments\**" />
+    <None Remove="XmlComments\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="translation.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ecng.ComponentModel" Version="$(EcngVer)" />
+    <PackageReference Include="Ecng.Common" Version="$(EcngVer)" />
+    <PackageReference Include="Ecng.Localization" Version="$(EcngVer)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Localization\Localization.csproj" />
+  </ItemGroup>
+</Project>
