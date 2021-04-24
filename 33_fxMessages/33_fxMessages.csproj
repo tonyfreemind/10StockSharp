@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{6403F6AF-FBFD-4667-B1A9-2CADA89B53D8}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>fx.Messages</PackageId>
+    <Version>5.0.1</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>fx.Messages</RootNamespace>
+    <AssemblyName>fx.Messages</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EcngVer>1.0.46</EcngVer>
+    <LangVersion>8.0</LangVersion>
+    <StockSharpVer>5.*</StockSharpVer>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Ecng.Serialization.FieldFactories" Version="$(EcngVer)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logging\Logging.csproj" />
+    <ProjectReference Include="..\..\Messages\Messages.csproj" />
+    <ProjectReference Include="..\31_fxLocalization\31_fxLocalization.csproj" />
+  </ItemGroup>
+</Project>
