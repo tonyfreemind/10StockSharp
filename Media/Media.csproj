@@ -5,6 +5,7 @@
     <RootNamespace>StockSharp.Media</RootNamespace>
     <AssemblyName>StockSharp.Media</AssemblyName>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Localization\Localization.csproj" />

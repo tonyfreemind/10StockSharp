@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">  
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{0A2B26AD-3AEB-4A37-8710-0A27E80C2D18}</ProjectGuid>    
     <PackageId>fx.AlgoEx</PackageId>

@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{C4476ADD-A3D5-41BB-9D43-55D865863B78}</ProjectGuid>
     <RootNamespace>StockSharp.Logging</RootNamespace>
     <AssemblyName>StockSharp.Logging</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Localization\Localization.csproj" />
