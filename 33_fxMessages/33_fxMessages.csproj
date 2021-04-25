@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{6403F6AF-FBFD-4667-B1A9-2CADA89B53D8}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

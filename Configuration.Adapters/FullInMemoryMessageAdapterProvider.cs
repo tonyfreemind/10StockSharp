@@ -10,7 +10,7 @@ namespace StockSharp.Configuration
 	using StockSharp.AlphaVantage;
 	using StockSharp.BarChart;
 	using StockSharp.Bibox;
-	using StockSharp.Binance;
+	//using StockSharp.Binance;
 	using StockSharp.Bitalong;
 	using StockSharp.Bitbank;
 	using StockSharp.Bitexbook;
@@ -181,7 +181,7 @@ namespace StockSharp.Configuration
 			() => typeof(KrakenMessageAdapter),
 			() => typeof(OkcoinMessageAdapter),
 			() => typeof(PoloniexMessageAdapter),
-			() => typeof(BinanceMessageAdapter),
+			//() => typeof(BinanceMessageAdapter),
 			() => typeof(BitexbookMessageAdapter),
 			() => typeof(BitmexMessageAdapter),
 			() => typeof(CexMessageAdapter),

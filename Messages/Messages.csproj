@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{B47F9C23-A4BD-46A9-BF27-54CB3D653503}</ProjectGuid>
     <RootNamespace>StockSharp.Messages</RootNamespace>
     <AssemblyName>StockSharp.Messages</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Ecng.Serialization.FieldFactories" Version="$(EcngVer)" />

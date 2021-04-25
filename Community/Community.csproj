@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{E8E18F8F-97BD-41AE-8888-F54F2411D575}</ProjectGuid>
     <RootNamespace>StockSharp.Community</RootNamespace>
     <AssemblyName>StockSharp.Community</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
