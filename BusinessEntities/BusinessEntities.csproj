@@ -3,6 +3,14 @@
   <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{CC7B4A0B-E6DA-46AD-A499-9C1AADE38496}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.BusinessEntities</PackageId>
+    <Version>5.0.99</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{CC7B4A0B-E6DA-46AD-A499-9C1AADE38496}</ProjectGuid>
     <RootNamespace>StockSharp.BusinessEntities</RootNamespace>
     <AssemblyName>StockSharp.BusinessEntities</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
