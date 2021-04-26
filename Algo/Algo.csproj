@@ -2,6 +2,14 @@
   <Import Project="..\common.props" />
   <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
+    <ProjectGuid>{248BE267-68D6-4CBB-8347-CD1EA913719E}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.Algo</PackageId>
+    <Version>5.0.99</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+  <PropertyGroup>
     <RootNamespace>StockSharp.Algo</RootNamespace>
     <AssemblyName>StockSharp.Algo</AssemblyName>
     <ProjectGuid>{248BE267-68D6-4CBB-8347-CD1EA913719E}</ProjectGuid>

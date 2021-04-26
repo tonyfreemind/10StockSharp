@@ -3,6 +3,14 @@
   <Import Project="..\Diectory.Build.props" />
   <PropertyGroup>
     <ProjectGuid>{7D6C7AD7-2735-4BC0-8E37-B21584E43264}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.Configuration.Adapters</PackageId>
+    <Version>5.0.99</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{7D6C7AD7-2735-4BC0-8E37-B21584E43264}</ProjectGuid>
     <RootNamespace>StockSharp.Configuration</RootNamespace>
     <AssemblyName>StockSharp.Configuration.Adapters</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
