@@ -267,7 +267,7 @@ namespace StockSharp.Algo.Storages
 			{
 				var result = IOPath.Combine(GetDataPath(date), _fileNameWithExtension);
 
-				Debug.WriteLine("FileAccess ({0}): {1}".Put(isLoad ? "Load" : "Save", result));
+				//Debug.WriteLine("FileAccess ({0}): {1}".Put(isLoad ? "Load" : "Save", result));
 				return result;
 			}
 

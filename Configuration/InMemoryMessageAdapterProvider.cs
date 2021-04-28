@@ -69,6 +69,8 @@ namespace StockSharp.Configuration
 			"StockSharp.Studio.Controls",
 			"StockSharp.QuikLua",
 			"StockSharp.QuikLua32",
+
+			"StockSharp.AlgoEx",
 		};
 		
 		/// <summary>

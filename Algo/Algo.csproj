@@ -5,7 +5,7 @@
     <ProjectGuid>{248BE267-68D6-4CBB-8347-CD1EA913719E}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.Algo</PackageId>
-    <Version>5.0.99</Version>
+    <Version>5.0.100</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
