@@ -36,7 +36,7 @@ namespace StockSharp.Algo.Storages
 		/// <returns></returns>
 		public static DateTime GetFileCreationTime( this IMarketDataDrive drive, SecurityId securityId, DataType dataType, DateTime date )
 		{
-			var path = GetPath( drive, dataType, date.ChangeKind(DateTimeKind.Utc), true);
+			var path = GetPath( drive, securityId, dataType, date.ChangeKind(DateTimeKind.Utc), true);
 
 			if ( File.Exists( path ) )
 			{
@@ -54,12 +54,15 @@ namespace StockSharp.Algo.Storages
 		/// <param name="date"></param>
 		/// <param name="isLoad"></param>
 		/// <returns></returns>
-		public static string GetPath( IMarketDataDrive drive, DataType dataType, DateTime date, bool isLoad )
+		public static string GetPath( IMarketDataDrive drive, SecurityId securityId, DataType dataType, DateTime date, bool isLoad )
 		{
+			var secPath = GetSecurityPath( securityId );
+			var drivePath = IOPath.Combine( drive.Path, secPath );
+
 			var fileName = dataType.DataTypeToFileName();
 			fileName += ".bin";
 
-			var dataPath = IOPath.Combine( drive.Path, date.ToString( "yyyy_MM_dd" ) );
+			var dataPath = IOPath.Combine( drivePath, date.ToString( "yyyy_MM_dd" ) );
 
 			var fullPath = IOPath.Combine( dataPath, fileName);
 			
@@ -115,6 +118,15 @@ namespace StockSharp.Algo.Storages
 				default:
 					throw new ArgumentOutOfRangeException( nameof( format ), format, LocalizedStrings.Str1219 );
 			}
+		}
+
+		public static string GetSecurityPath( SecurityId securityId )
+		{
+			var id = securityId == default ? TraderHelper.AllSecurity.Id : securityId.ToStringId();
+
+			var folderName = id.SecurityIdToFolderName();
+
+			return IOPath.Combine( folderName.Substring( 0, 1 ), folderName );
 		}
 
 		//public static string DataTypeToFileName( this DataType dataType )

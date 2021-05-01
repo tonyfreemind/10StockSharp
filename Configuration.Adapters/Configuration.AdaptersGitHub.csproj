@@ -5,7 +5,7 @@
     <ProjectGuid>{7D6C7AD7-2735-4BC0-8E37-B21584E43264}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.Configuration.Adapters</PackageId>
-    <Version>5.0.99</Version>
+    <Version>5.0.102</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -16,6 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="fx.FxConnect" Version="5.0.1" />
     <PackageReference Include="StockSharp.AlfaDirect" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlorHistory" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlphaVantage" Version="$(StockSharpVer)" />
@@ -105,8 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Configuration\Configuration.csproj" />
-    <ProjectReference Include="..\Messages\Messages.csproj" />
-
-    <ProjectReference Include="..\Samples\Connectors\BitStamp\BitStamp.csproj" />
+    <ProjectReference Include="..\Messages\Messages.csproj" />    
   </ItemGroup>
 </Project>
