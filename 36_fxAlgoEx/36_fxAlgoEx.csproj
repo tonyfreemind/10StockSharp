@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>{0A2B26AD-3AEB-4A37-8710-0A27E80C2D18}</ProjectGuid>    
     <PackageId>fx.AlgoEx</PackageId>
-    <Version>5.0.3</Version>
+    <Version>5.0.110</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>        
   </PropertyGroup>
@@ -19,6 +19,12 @@
     <EcngVer>1.0.46</EcngVer>
     <LangVersion>8.0</LangVersion>
     <StockSharpVer>5.*</StockSharpVer>    
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
   

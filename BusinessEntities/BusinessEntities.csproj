@@ -5,7 +5,7 @@
     <ProjectGuid>{CC7B4A0B-E6DA-46AD-A499-9C1AADE38496}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.BusinessEntities</PackageId>
-    <Version>5.0.99</Version>
+    <Version>5.0.110</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -14,6 +14,10 @@
     <RootNamespace>StockSharp.BusinessEntities</RootNamespace>
     <AssemblyName>StockSharp.BusinessEntities</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />

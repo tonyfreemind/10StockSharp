@@ -4,7 +4,7 @@
     <ProjectGuid>{6403F6AF-FBFD-4667-B1A9-2CADA89B53D8}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>fx.Messages</PackageId>
-    <Version>5.0.1</Version>
+    <Version>5.0.110</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -19,6 +19,11 @@
     <EcngVer>1.0.46</EcngVer>
     <LangVersion>8.0</LangVersion>
     <StockSharpVer>5.*</StockSharpVer>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Ecng.Serialization.FieldFactories" Version="$(EcngVer)" />

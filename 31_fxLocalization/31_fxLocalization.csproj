@@ -4,7 +4,7 @@
     <ProjectGuid>{07B45D67-8324-40ED-936F-D6FF5651A2D7}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>fx.Localization</PackageId>
-    <Version>5.0.1</Version>
+    <Version>5.0.110</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -19,6 +19,11 @@
     <EcngVer>1.0.46</EcngVer>
     <LangVersion>8.0</LangVersion>
     <StockSharpVer>5.*</StockSharpVer>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>  
   <ItemGroup>
     <Compile Remove="XmlComments\**" />
