@@ -1,8 +1,8 @@
 namespace StockSharp.Algo.Storages
 {
 	using System;
-
-	using Ecng.Collections;
+    using System.Collections.Generic;
+    using Ecng.Collections;
 	using Ecng.Common;
 
 	using StockSharp.Algo.Candles.Compression;
@@ -67,6 +67,23 @@ namespace StockSharp.Algo.Storages
 					return message;
 
 				var transactionId = message.TransactionId;
+
+				/* -------------------------------------------------------------------------------------------------------------------------------------------
+				* 
+				*  Tony 06 : If MarketDataMessage has Extension Info, we will pass along the message to adapter to download
+				* 
+				* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+				if ( message.ExtensionInfo != null )
+                {
+					IDictionary<string, object> ext = message.ExtensionInfo;
+
+					if ( ext.ContainsKey( "ReloadCandles" ) )
+                    {
+						return message;
+                    }
+
+				}
 
 				var lastTime = Settings.LoadMessages(CandleBuilderProvider, message, newOutMessage);
 
