@@ -19,7 +19,7 @@
     <EcngVer>1.0.46</EcngVer>
     <LangVersion>8.0</LangVersion>
     <StockSharpVer>5.*</StockSharpVer>
-  </PropertyGroup>
+  </PropertyGroup>  
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>full</DebugType>
