@@ -24,9 +24,9 @@
     <None Remove="XmlComments\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Ecng.ComponentModel" Version="$(EcngVer)" />
+    <EmbeddedResource Include="translation.json" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="translation.json" />
+    <PackageReference Include="Ecng.ComponentModel" Version="1.0.54" />
   </ItemGroup>
 </Project>
