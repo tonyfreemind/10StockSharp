@@ -28,7 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="fx.FxConnect" Version="5.0.10" />
+    <PackageReference Include="fx.FxConnect" Version="5.0.110" />
     <PackageReference Include="StockSharp.AlfaDirect" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlorHistory" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlphaVantage" Version="$(StockSharpVer)" />
