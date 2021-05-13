@@ -5,7 +5,7 @@
     <ProjectGuid>{B47F9C23-A4BD-46A9-BF27-54CB3D653503}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.Messages</PackageId>
-    <Version>5.0.110</Version>
+    <Version>5.0.111</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>

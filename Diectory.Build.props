@@ -11,6 +11,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>		 
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>	
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<FreemindVer>5.0.112</FreemindVer>
 	</PropertyGroup>
 	
 	<ItemGroup>

@@ -1,0 +1,2 @@
+﻿$nukpgName=$args[0]
+Get-ChildItem -Path . -Recurse -Filter *$nukpgName.nupkg |ForEach-Object {  Write-Host "About to push a package named '$($_.Name)'..."   dotnet nuget push --api-key az --source FreemindUltimate $_.FullName }
