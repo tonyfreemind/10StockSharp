@@ -5,7 +5,7 @@
     <ProjectGuid>{A1A5C8E7-0BA6-4D8C-8FB2-93424A94E5D4}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.Media</PackageId>
-    <Version>5.0.110</Version>
+    <Version>5.0.111</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>

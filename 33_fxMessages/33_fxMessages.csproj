@@ -4,7 +4,7 @@
     <ProjectGuid>{6403F6AF-FBFD-4667-B1A9-2CADA89B53D8}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>fx.Messages</PackageId>
-    <Version>5.0.110</Version>
+    <Version>5.0.111</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>

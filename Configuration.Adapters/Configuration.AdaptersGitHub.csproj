@@ -5,7 +5,7 @@
     <ProjectGuid>{7D6C7AD7-2735-4BC0-8E37-B21584E43264}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>StockSharp.Configuration.Adapters</PackageId>
-    <Version>5.0.110</Version>
+    <Version>5.0.111</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="fx.FxConnect" Version="5.0.10" />
+    <PackageReference Include="fx.FxConnect" Version="5.0.110" />
     <PackageReference Include="StockSharp.AlfaDirect" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlorHistory" Version="$(StockSharpVer)" />
     <PackageReference Include="StockSharp.AlphaVantage" Version="$(StockSharpVer)" />
