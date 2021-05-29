@@ -78,7 +78,13 @@ namespace StockSharp.Algo
 
 				if (_currentCandle != null && _currentCandle.OpenTime == message.OpenTime)
 				{
-					if (_currentCandle.State == CandleStates.Finished)
+					/* -------------------------------------------------------------------------------------------------------------------------------------------
+					* 
+					*  Tony 10: If those candles are freshly loaded from the server, I want these candles to pass thru
+					* 
+					* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+					if ( _currentCandle.State == CandleStates.Finished && message.BatchStatus != fx.Base.fxBatchStatus.Latest )
 						return false;
 
 					_currentCandle.Update(message);

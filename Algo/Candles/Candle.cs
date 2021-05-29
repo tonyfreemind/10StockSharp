@@ -206,7 +206,7 @@ namespace StockSharp.Algo.Candles
 			get => _state;
 			set
 			{
-				ThrowIfFinished();
+				//ThrowIfFinished();
 				_state = value;
 			}
 		}
