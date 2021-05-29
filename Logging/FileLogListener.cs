@@ -185,7 +185,11 @@ namespace StockSharp.Logging
 				if (value.IsEmpty())
 					throw new ArgumentNullException(nameof(value));
 
-				Directory.CreateDirectory(value);
+				if ( ! Directory.Exists( value ) )
+				{
+					Directory.CreateDirectory( value );
+				}
+				
 
 				_logDirectory = value;
 			}
@@ -260,6 +264,7 @@ namespace StockSharp.Logging
 			switch (SeparateByDates)
 			{
 				case SeparateByDateModes.None:
+					fileName = date.ToString( DirectoryDateFormat ) + "_" + fileName;
 					break;
 				case SeparateByDateModes.FileName:
 					fileName = date.ToString(DirectoryDateFormat) + "_" + fileName;
