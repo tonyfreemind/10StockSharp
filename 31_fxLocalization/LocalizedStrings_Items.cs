@@ -415,6 +415,29 @@ namespace fx.Localization
 		/// </summary>
 		public static string StyleString => GetString( StyleKey );
 
+
+		/// <summary>
+		/// WaveScenarioNo
+		/// </summary>
+
+		public const string WaveScenarioNoKey = nameof(WaveScenarioNo);
+
+		/// <summary>
+		/// WaveScenarioNo
+		/// </summary>
+		public static string WaveScenarioNo => GetString( WaveScenarioNoKey );
+
+		/// <summary>
+		/// WaveImportance
+		/// </summary>
+
+		public const string WaveImportanceKey = nameof(WaveImportance);
+
+		/// <summary>
+		/// WaveImportance
+		/// </summary>
+		public static string WaveImportance => GetString( WaveImportanceKey );
+
 		#endregion
 	}
 }

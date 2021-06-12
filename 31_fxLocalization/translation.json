@@ -148,6 +148,17 @@
   "StyleString": {
     "en": "Style",
     "ru": "Style"
+  },
+
+  "WaveScenarioNo": {
+    "en": "Wave Scenario Number",
+    "ru": "Wave Scenario Number"
+  },
+
+
+  "WaveImportance": {
+    "en": "Wave Importance",
+    "ru": "Wave Importance"
   }
 
 }

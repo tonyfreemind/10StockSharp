@@ -4,7 +4,7 @@
     <ProjectGuid>{07B45D67-8324-40ED-936F-D6FF5651A2D7}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>fx.Localization</PackageId>
-    <Version>5.0.111</Version>
+    <Version>5.0.112</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
