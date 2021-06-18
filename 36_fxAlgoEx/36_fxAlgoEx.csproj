@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>{0A2B26AD-3AEB-4A37-8710-0A27E80C2D18}</ProjectGuid>    
     <PackageId>fx.AlgoEx</PackageId>
-    <Version>5.0.111</Version>
+    <Version>5.0.120</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>        
   </PropertyGroup>

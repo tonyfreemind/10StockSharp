@@ -4,7 +4,7 @@
     <ProjectGuid>{6403F6AF-FBFD-4667-B1A9-2CADA89B53D8}</ProjectGuid>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>fx.Messages</PackageId>
-    <Version>5.0.111</Version>
+    <Version>5.0.120</Version>
     <Authors>TonyFreemind</Authors>
     <Company>FreemindFx</Company>
   </PropertyGroup>
@@ -29,7 +29,6 @@
     <PackageReference Include="Ecng.Serialization.FieldFactories" Version="$(EcngVer)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\31_fxLocalization\31_fxLocalization.csproj" />
     <ProjectReference Include="..\Localization\Localization.csproj" />
     <ProjectReference Include="..\Messages\Messages.csproj" />
   </ItemGroup>

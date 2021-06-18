@@ -21526,5 +21526,172 @@
   "Development": {
     "en": "Development",
     "ru": "Разработка"
+  },
+
+
+
+
+
+
+  "HedgeLong": {
+    "en": "Hedge All Long Positions",
+    "ru": "Hedge All Long Positions"
+  },
+  "HedgeShort": {
+    "en": "Hedge All Short Positions",
+    "ru": "Hedge All Short Positions"
+  },
+  "HedgeAll": {
+    "en": "Hedge All Positions",
+    "ru": "Hedge All Positions"
+  },
+  "SetSafety": {
+    "en": "A trade to Set Safety Net for all positions",
+    "ru": "A trade to Set Safety Net for all positions"
+  },
+  "SetBreakEven": {
+    "en": "A trade to set Break Even Stop Loss for all positions with x pips profit",
+    "ru": "A trade to set Break Even Stop Loss for all positions with x pips profit"
+  },
+  "SetTakeProfit": {
+    "en": "A trade to Set Take Profit target for all positions",
+    "ru": "A trade to Set Take Profit target for all positions"
+  },
+  "CloseBuy": {
+    "en": "Close All Long Orders",
+    "ru": "Close All Long Orders"
+  },
+  "CloseSell": {
+    "en": "Close All Short Orders",
+    "ru": "Close All Short Orders"
+  },
+  "EscapeWithoutLoss": {
+    "en": "A lossing trade with take profit set to entry",
+    "ru": "A lossing trade with take profit set to entry"
+  },
+  "ReverseDirection": {
+    "en": "Hedge or Close existing trades and open trades in opposite direction",
+    "ru": "Hedge or Close existing trades and open trades in opposite direction"
+  },
+  "DownloadFromBeginning": {
+    "en": "Download all the way back to earliest",
+    "ru": "Download all the way back to earliest"
+  },
+  "FromEarliest": {
+    "en": "From Earliest",
+    "ru": "From Earliest"
+  },
+  "FourMinsFromOneMin": {
+    "en": "1 Min to 4 Min Candles",
+    "ru": "1 Min to 4 Min Candles"
+  },
+  "DailyToWeekly": {
+    "en": "Daily to Weekly Candles",
+    "ru": "Daily to Weekly Candles"
+  },
+  "DailyToMonthly": {
+    "en": "Daily to Monthly Candles",
+    "ru": "Daily to Monthly Candles"
+  },
+  "MissingBars": {
+    "en": "Find missing bars and download",
+    "ru": "Find missing bars and download"
+  },
+  "LostAndFoundBars": {
+    "en": "Lost And Found",
+    "ru": "Lost And Found"
+  },
+  "FreemindRsiDesc": {
+    "en": "Harmonic Elliott Wave RSI",
+    "ru": "Harmonic Elliott Wave RSI"
+  },
+  "FreemindRsiName": {
+    "en": "HewRSI",
+    "ru": "HewRSI"
+  },
+  "FibRetracement": {
+    "en": "Fibonacci Retracement",
+    "ru": "Fibonacci Retracement"
+  },
+  "FibExpansion": {
+    "en": "Fibonacci Expansion",
+    "ru": "Fibonacci Expansion"
+  },
+  "Sprite": {
+    "en": "Sprite",
+    "ru": "Sprite"
+  },
+  "CandlePattern": {
+    "en": "CandlePattern",
+    "ru": "CandlePattern"
+  },
+  "IndicatorResult": {
+    "en": "Show Freemind Indicator Result",
+    "ru": "Show Freemind Indicator Result"
+  },
+  "ShowExtremes": {
+    "en": "Show Oscillator Extremes",
+    "ru": "Show Oscillator Extremes"
+  },
+  "MacdExtremes": {
+    "en": "Show MACD Peaks and Troughs",
+    "ru": "Show MACD Peaks and Troughs"
+  },
+  "TradingTime": {
+    "en": "Show Trading Time",
+    "ru": "Show Trading Time"
+  },
+  "ElliottWaveZigZag": {
+    "en": "Show Elliott Wave Peaks and Troughs",
+    "ru": "Show Elliott Wave Peaks and Troughs"
+  },
+  "PriceTimeSignal": {
+    "en": "Show Gann Price and Time Degree",
+    "ru": "Show Gann Price and Time Degree"
+  },
+  "TechnicalAnalysis": {
+    "en": "Technical Analysis",
+    "ru": "Technical Analysis"
+  },
+  "ShowDivergence": {
+    "en": "Show Price Oscillator Divergence",
+    "ru": "Show Price Oscillator Divergence"
+  },
+  "ElliotWave": {
+    "en": "Elliot Wave",
+    "ru": "Elliot Wave"
+  },
+  "MonoWaveGroup": {
+    "en": "MonoWaveGroup",
+    "ru": "MonoWaveGroup"
+  },
+  "Fifocapacity": {
+    "en": "Fifo Capacity",
+    "ru": "Fifo Capacity"
+  },
+  "IndicatorFifo": {
+    "en": "Indicator (FIFO)",
+    "ru": "Indicator (FIFO)"
+  },
+
+  "FreemindCandle": {
+    "en": "Freemind Batch Candle",
+    "ru": "Freemind Batch Candle"
+  },
+
+  "StyleString": {
+    "en": "Style",
+    "ru": "Style"
+  },
+
+  "WaveScenarioNo": {
+    "en": "Wave Scenario Number",
+    "ru": "Wave Scenario Number"
+  },
+
+
+  "WaveImportance": {
+    "en": "Wave Importance",
+    "ru": "Wave Importance"
   }
 }
