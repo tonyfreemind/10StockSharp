@@ -1,20 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
+  <PropertyGroup>
+    <ProjectGuid>{248BE267-68D6-4CBB-8347-CD1EA913719E}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.Algo</PackageId>
+    <Version>5.0.131</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>StockSharp.Algo</RootNamespace>
     <AssemblyName>StockSharp.Algo</AssemblyName>
-    <ProjectGuid>{2A5C6FAD-106C-4A4A-B602-77A6B1034CA2}</ProjectGuid>
+    <ProjectGuid>{248BE267-68D6-4CBB-8347-CD1EA913719E}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Ecng.Interop" Version="$(EcngVer)" />
-    <PackageReference Include="Ecng.Net" Version="$(EcngVer)" />
-    <PackageReference Include="Ecng.IO" Version="$(EcngVer)" />
-    <PackageReference Include="Ecng.StringSearch" Version="$(EcngVer)" />
+    <PackageReference Include="Ecng.Interop" Version="1.0.54" />
+    <PackageReference Include="Ecng.Net" Version="1.0.58" />
+    <PackageReference Include="Ecng.IO" Version="1.0.49" />
+    <PackageReference Include="Ecng.StringSearch" Version="1.0.9" />
 
     <PackageReference Include="MathNet.Numerics" Version="$(MathNumVer)" />
     <PackageReference Include="Microsoft.CSharp" Version="$(CSharpVer)" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\00_fxBase\00_fxBase.csproj" />
+    <ProjectReference Include="..\33_fxMessages\33_fxMessages.csproj" />
     <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj" />
     <ProjectReference Include="..\Community\Community.csproj" />
     <ProjectReference Include="..\Configuration\Configuration.csproj" />

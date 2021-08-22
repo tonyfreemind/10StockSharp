@@ -24,8 +24,8 @@ namespace StockSharp.Algo.Storages
 	using Ecng.Collections;
 	using Ecng.Common;
 	using Ecng.ComponentModel;
-
-	using MoreLinq;
+    using fx.Base;
+    using MoreLinq;
 
 	using StockSharp.Algo.Candles;
 	using StockSharp.Algo.Candles.Compression;
@@ -1378,12 +1378,39 @@ namespace StockSharp.Algo.Storages
 
 			var replySent = false;
 
+			/* -------------------------------------------------------------------------------------------------------------------------------------------
+            * 
+            *  Tony 05 : After loading of candles, we will add that this is a batch candle, so we don't process one bar by a time
+            * 
+            * ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+			var count = messages.Count( );
+
+			int msgIndex = 0;
+
 			foreach (var message in messages)
 			{
 				if (!replySent)
 				{
 					sendReply();
 					replySent = true;
+				}
+
+				/* -------------------------------------------------------------------------------------------------------------------------------------------
+                 * 
+                 *  Tony 05 : Add BatchStatus to the Message so we don't have to do technical analysis per bar.
+                 * 
+                 * ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+				if ( message is TimeFrameCandleMessage tf )
+				{
+					tf.BatchStatus = fxBatchStatus.Batching;
+
+					if ( msgIndex == count - 1 )
+					{
+						tf.BatchStatus = fxBatchStatus.EndBatch;
+					}
 				}
 
 				message.OriginalTransactionId = transactionId;

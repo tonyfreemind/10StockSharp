@@ -67,7 +67,7 @@ namespace StockSharp.Community
 			{ Products.Terminal, Terminal },
 			{ Products.Shell, new ProductInfoMessage { Id = 11, Name = "S#.Shell", PackageId = "StockSharp.Shell" } },
 			{ Products.MatLab, new ProductInfoMessage { Id = 12, Name = "S#.MatLab", PackageId = "StockSharp.MatLab" } },
-			{ Products.Lci, new ProductInfoMessage { Id = 13, Name = "S#.Ë×È", PackageId = "StockSharp.LciViewer" } },
+			{ Products.Lci, new ProductInfoMessage { Id = 13, Name = "S#.Lci", PackageId = "StockSharp.LciViewer" } },
 			{ Products.Server, Server },
 			{ Products.Installer, Installer },
 		};

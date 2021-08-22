@@ -924,6 +924,11 @@ namespace StockSharp.Algo
 
 			if (SupportPartialDownload)
 			{
+				/* -------------------------------------------------------------------------------------------------------------------------------------------
+                 * 
+                 *  INFO 01: Download Freaking partial download is screwing up my FxcmConnec Adapter as I already have partial download in the COnnector.
+                 * 
+                 * ------------------------------------------------------------------------------------------------------------------------------------------- */
 				adapter = ApplyOwnInner(new PartialDownloadMessageAdapter(adapter));
 			}
 

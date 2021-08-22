@@ -26,11 +26,13 @@ namespace StockSharp.Algo.Candles
 	using StockSharp.BusinessEntities;
 	using StockSharp.Messages;
 	using StockSharp.Localization;
+    using fx.Messages;
+    using fx.Base;
 
-	/// <summary>
-	/// Base candle class (contains main parameters).
-	/// </summary>
-	[DataContract]
+    /// <summary>
+    /// Base candle class (contains main parameters).
+    /// </summary>
+    [DataContract]
 	[Serializable]
 	[KnownType(typeof(TickCandle))]
 	[KnownType(typeof(VolumeCandle))]
@@ -204,7 +206,7 @@ namespace StockSharp.Algo.Candles
 			get => _state;
 			set
 			{
-				ThrowIfFinished();
+				//ThrowIfFinished();
 				_state = value;
 			}
 		}
@@ -298,6 +300,31 @@ namespace StockSharp.Algo.Candles
 			destination.BuildFrom = BuildFrom;
 
 			return destination;
+		}
+
+		/* -------------------------------------------------------------------------------------------------------------------------------------------
+		* 
+		*  Tony 03: Candle BatchStatus 
+		* 
+		* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+		private fxBatchStatus _batchStatus;
+
+		/// <summary>
+		/// Batch Status
+		/// </summary>
+		[DataMember]
+
+		public fxBatchStatus BatchStatus
+		{
+			get
+			{
+				return _batchStatus;
+			}
+			set
+			{
+				_batchStatus = value;
+			}
 		}
 	}
 

@@ -301,7 +301,13 @@ namespace StockSharp.Algo.Storages
 		/// </summary>
 		private void StartStorageTimer()
 		{
-			if (_timer != null || !Buffer.Enabled || Buffer.DisableStorageTimer)
+			/* -------------------------------------------------------------------------------------------------------------------------------------------
+             * 
+             *  INFO 00: Save all the downloaded Candles, Ticks and Whatever to storage
+             * 
+             * ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+			if ( _timer != null || !Buffer.Enabled || Buffer.DisableStorageTimer)
 				return;
 
 			var isProcessing = false;

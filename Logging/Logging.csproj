@@ -1,9 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
+  <PropertyGroup>
+    <ProjectGuid>{C4476ADD-A3D5-41BB-9D43-55D865863B78}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.Logging</PackageId>
+    <Version>5.0.131</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
   <PropertyGroup>
     <ProjectGuid>{C4476ADD-A3D5-41BB-9D43-55D865863B78}</ProjectGuid>
     <RootNamespace>StockSharp.Logging</RootNamespace>
     <AssemblyName>StockSharp.Logging</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Localization\Localization.csproj" />

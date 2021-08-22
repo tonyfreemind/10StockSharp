@@ -237,7 +237,13 @@ namespace StockSharp.Messages
 			_msgStat.Add(message);
 			_queue.Enqueue(message);
 
-			if (_queue.Count > SuspendMaxCount)
+			/* -------------------------------------------------------------------------------------------------------------------------------------------
+			* 
+			*  Tony 01: This _queue is sorted by Local time, no wonder even after I have changed databar insertion time to 
+			* 
+			* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+			if ( _queue.Count > SuspendMaxCount)
 				SuspendTimeout.Sleep();
 
 			return true;

@@ -1,10 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <Import Project="..\common.props" />
+  <Import Project="..\Diectory.Build.props" />
+  <PropertyGroup>
+    <ProjectGuid>{A1A5C8E7-0BA6-4D8C-8FB2-93424A94E5D4}</ProjectGuid>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StockSharp.Media</PackageId>
+    <Version>5.0.131</Version>
+    <Authors>TonyFreemind</Authors>
+    <Company>FreemindFx</Company>
+  </PropertyGroup>
   <PropertyGroup>
     <ProjectGuid>{A1A5C8E7-0BA6-4D8C-8FB2-93424A94E5D4}</ProjectGuid>
     <RootNamespace>StockSharp.Media</RootNamespace>
     <AssemblyName>StockSharp.Media</AssemblyName>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Localization\Localization.csproj" />
