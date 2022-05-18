@@ -326,13 +326,13 @@ namespace SampleOptionQuoting
 
 			try
 			{
-				if (File.Exists(_settingsFile) || File.Exists(_settingsFile.MakeLegacy()))
+				if (_settingsFile.IsConfigExists())
 				{
 					var ctx = new ContinueOnExceptionContext();
 					ctx.Error += ex => ex.LogError();
 
 					using (ctx.ToScope())
-						Connector.LoadIfNotNull(_settingsFile.DeserializeWithMigration<SettingsStorage>());
+						Connector.LoadIfNotNull(_settingsFile.Deserialize<SettingsStorage>());
 				}
 			}
 			catch

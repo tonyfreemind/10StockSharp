@@ -98,13 +98,13 @@ namespace SampleRealTimeEmulation
 
 			try
 			{
-				if (File.Exists(_settingsFile) || File.Exists(_settingsFile.MakeLegacy()))
+				if (_settingsFile.IsConfigExists())
 				{
 					var ctx = new ContinueOnExceptionContext();
 					ctx.Error += ex => ex.LogError();
 
 					using (ctx.ToScope())
-						_realConnector.LoadIfNotNull(_settingsFile.DeserializeWithMigration<SettingsStorage>());
+						_realConnector.LoadIfNotNull(_settingsFile.Deserialize<SettingsStorage>());
 				}
 			}
 			catch

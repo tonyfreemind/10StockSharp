@@ -35,11 +35,11 @@
 
 			Directory.CreateDirectory(_dir);
 
-			foreach (var xml in Paths.EnumerateDefaultAndLegacy(_dir))
+			foreach (var xml in _dir.EnumerateConfigs())
 			{
 				try
 				{
-					var strategy = xml.DeserializeWithMigration<SettingsStorage>()?.LoadEntire<Strategy>();
+					var strategy = xml.Deserialize<SettingsStorage>()?.LoadEntire<Strategy>();
 
 					if (strategy is null)
 						continue;
