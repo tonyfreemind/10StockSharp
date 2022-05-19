@@ -151,7 +151,7 @@ namespace StockSharp.Configuration
 			() => typeof(FixMessageAdapter),
 			() => typeof(FastMessageAdapter),
 			() => typeof(InteractiveBrokersMessageAdapter),
-			() => typeof(IQFeedMessageAdapter),
+			//() => typeof(IQFeedMessageAdapter),
 			() => typeof(ItchMessageAdapter),
 			() => typeof(LmaxMessageAdapter),
 			() => typeof(MicexMessageAdapter),
